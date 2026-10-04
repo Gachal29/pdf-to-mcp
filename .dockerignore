@@ -1,0 +1,10 @@
+.git
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+djangoapp/staticfiles/
+djangoapp/mediafiles/
+README.md
+AGENTS.md

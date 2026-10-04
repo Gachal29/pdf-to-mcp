@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# コンテナ内で実行するため CRLF にしない (CRLF だと exec format error になる)
+*.sh text eol=lf
