@@ -49,8 +49,7 @@ class PdfDocument(models.Model):
     updated_at = models.DateTimeField("更新日時", auto_now=True)
 
     class Meta:
-        verbose_name = "PDF ドキュメント"
-        verbose_name_plural = "PDF ドキュメント"
+        verbose_name = verbose_name_plural = "PDF ドキュメント"
         ordering = ["-created_at"]
 
     def __str__(self):
@@ -104,8 +103,7 @@ class PdfVersion(models.Model):
     uploaded_at = models.DateTimeField("アップロード日時", auto_now_add=True)
 
     class Meta:
-        verbose_name = "PDF バージョン"
-        verbose_name_plural = "PDF バージョン"
+        verbose_name = verbose_name_plural = "PDF バージョン"
         ordering = ["-version"]
         constraints = [
             models.UniqueConstraint(
